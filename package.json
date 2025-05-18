@@ -1,0 +1,37 @@
+{
+    "name": "@javiertinc/transform",
+    "version": "1.0.0",
+    "description": "Una librería simple pero muy útil para transformar datos.",
+    "author": "@JaviertINC",
+    "homepage": "https://github.com/JaviertINC/transform/wiki",
+    "repository": "github:javiertinc/transform",
+    "license": "MIT",
+    "keywords": [
+        "javiertinc",
+        "transform",
+        "transformador",
+        "conversor",
+        "numeros",
+        "colores",
+        "tamaños",
+        "sizes",
+        "typescript",
+        "javascript",
+        "library",
+        "utils"
+    ],
+    "main": "./index.js",
+    "scripts": {
+        "clear": "rm -r ./dist",
+        "dev": "jtexec ./src/index.ts",
+        "build": "tsc && node ./pkgBuild.js && cp ./readme.md ./dist",
+        "publish": "npm run build && cd dist && npm publish --registry http://localhost:4873",
+        "min": "browserify ./dist/index.js -o ./dist/jt.transform.bundle.js && uglifyjs ./dist/jt.transform.bundle.js -o ./dist/jt.transform.min.js"
+    },
+    "devDependencies": {
+        "browserify": "^17.0.1",
+        "typescript": "^5.8.3",
+        "uglify-js": "^3.19.3",
+        "ts-node": "^10.9.2"
+    }
+}
