@@ -6,8 +6,6 @@
 
 Aquí te presento una librería simple y ligera que te ayudará a transformar datos de un formato "técnico" a un formato más legible y comprensible por el usuario común. Con **jtTransform**, podrás convertir números a letras,
 
-[![Características](https://javiertinc.github.io/transform/images/gh-caracteristicas.png)](
-
 [![Documentación](https://javiertinc.github.io/transform/images/gh-documentacion.png)](https://github.com/JaviertINC/transform/wiki)
 
 Te invito a revisar la [**documentación**](https://github.com/JaviertINC/transform/wiki) para comprobar lo fácil que es usarlo. Aquí encontrarás ejemplos de uso, funciones disponibles y mucho más.
@@ -19,7 +17,7 @@ Te invito a revisar la [**documentación**](https://github.com/JaviertINC/transf
 npm install @javiertinc/transform
 ```
 
-```bash
+```bash 
 yarn add @javiertinc/transform
 ```
 
