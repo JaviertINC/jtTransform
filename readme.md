@@ -71,8 +71,8 @@ jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 | Texto a Alfabeto NATO (incluyendo Ñ) | ✅ | `nato.format` |
 | Alfabeto NATO a texto (incluyendo Ñ) | ✅ | `nato.unformat` |
 | `Morse` |  |  |
-| Texto a Alfabeto Morse | ❌ | `morse.format` |
-| Alfabeto Morse a texto | ❌ | `morse.unformat` |
+| Texto a Alfabeto Morse | ✅ | `morse.format` |
+| Alfabeto Morse a texto | ✅ | `morse.unformat` |
 | `Braille` |  |  |
 | Texto a Alfabeto Braille | ❌ | `braille.format` |
 | Alfabeto Braille a texto | ❌ | `braille.unformat` |
