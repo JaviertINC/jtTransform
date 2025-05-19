@@ -74,8 +74,8 @@ jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 | Texto a Alfabeto Morse | ✅ | `morse.format` |
 | Alfabeto Morse a texto | ✅ | `morse.unformat` |
 | `Braille` |  |  |
-| Texto a Alfabeto Braille | ❌ | `braille.format` |
-| Alfabeto Braille a texto | ❌ | `braille.unformat` |
+| Texto a Alfabeto Braille | ✅ | `braille.format` |
+| Alfabeto Braille a texto | ✅ | `braille.unformat` |
 | `Colores` |  |  |
 | Colores a formato hexadecimal | ❌ | `color.toHex` |
 | Colores a formato RGB | ❌ | `color.toRGB` |
