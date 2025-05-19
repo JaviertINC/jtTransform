@@ -76,6 +76,9 @@ jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 | `Braille` |  |  |
 | Texto a Alfabeto Braille | ✅ | `braille.format` |
 | Alfabeto Braille a texto | ✅ | `braille.unformat` |
+| `Fechas` |  |  |
+| Días de la semana | ✅ | `date.weekDay` |
+| Meses del año | ✅ | `date.month` |
 | `Colores` |  |  |
 | Colores a formato hexadecimal | ❌ | `color.toHex` |
 | Colores a formato RGB | ❌ | `color.toRGB` |
@@ -84,6 +87,3 @@ jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 | Colores a formato HSLA | ❌ | `color.toHSLA` |
 | Colores a formato CMYK | ❌ | `color.toCMYK` |
 | Colores a todos los formatos soportados | ❌ | `color.toAll` |
-| `Fechas` |  |  |
-| Días de la semana | ❌ | `date.weekday` |
-| Meses del año | ❌ | `date.month` |
