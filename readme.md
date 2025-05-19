@@ -53,7 +53,7 @@ jtTransform.letterToNumber('Mil doscientos treinta y cuatro'); // Retorna: 1234
 | Función | Estado | Nombre tentativo de la función |
 | ------- | :------: | :----------------- |
 | Convertir números a letras | ✅ | `numberToLetter` |
-| Convertir letras a números | ❌ | `letterToNumber` |
+| Convertir letras a números | ✅ | `letterToNumber` |
 | `Tamaños` |  |  |
 | Convertir tamaños a un formato legible | ❌ | `size.format` |
 | Convertir tamaños con formato legible a bytes | ❌ | `size.unformat` |
