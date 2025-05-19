@@ -68,8 +68,8 @@ jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 | Convertir tamaños a un formato legible | ✅ | `size.format` |
 | Convertir tamaños con formato legible a bytes | ✅ | `size.unformat` |
 | `Alfabeto NATO` |  |  |
-| Texto a Alfabeto NATO (incluyendo Ñ) | ❌ | `nato.format` |
-| Alfabeto NATO a texto (incluyendo Ñ) | ❌ | `nato.unformat` |
+| Texto a Alfabeto NATO (incluyendo Ñ) | ✅ | `nato.format` |
+| Alfabeto NATO a texto (incluyendo Ñ) | ✅ | `nato.unformat` |
 | `Morse` |  |  |
 | Texto a Alfabeto Morse | ❌ | `morse.format` |
 | Alfabeto Morse a texto | ❌ | `morse.unformat` |
