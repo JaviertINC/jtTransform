@@ -46,6 +46,16 @@ jtTransform.letterToNumber('Uno'); // Retorna: 1
 jtTransform.letterToNumber('Doce'); // Retorna: 12
 jtTransform.letterToNumber('Ciento veintitrés'); // Retorna: 123
 jtTransform.letterToNumber('Mil doscientos treinta y cuatro'); // Retorna: 1234
+
+// Convierte tamaños a un formato legible
+jtTransform.size.format(1024); // Retorna: "1 KB"
+jtTransform.size.format(1048576); // Retorna: "1 MB"
+jtTransform.size.format(1073741824); // Retorna: "1 GB"
+
+// Convierte tamaños con formato legible a bytes
+jtTransform.size.unformat('1KB'); // Retorna: 1024
+jtTransform.size.unformat('1MB'); // Retorna: 1048576
+jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 ```
 
 ![Roadmap](https://javiertinc.github.io/transform/images/gh-roadmap.png)
@@ -55,8 +65,8 @@ jtTransform.letterToNumber('Mil doscientos treinta y cuatro'); // Retorna: 1234
 | Convertir números a letras | ✅ | `numberToLetter` |
 | Convertir letras a números | ✅ | `letterToNumber` |
 | `Tamaños` |  |  |
-| Convertir tamaños a un formato legible | ❌ | `size.format` |
-| Convertir tamaños con formato legible a bytes | ❌ | `size.unformat` |
+| Convertir tamaños a un formato legible | ✅ | `size.format` |
+| Convertir tamaños con formato legible a bytes | ✅ | `size.unformat` |
 | `Alfabeto NATO` |  |  |
 | Texto a Alfabeto NATO (incluyendo Ñ) | ❌ | `nato.format` |
 | Alfabeto NATO a texto (incluyendo Ñ) | ❌ | `nato.unformat` |
