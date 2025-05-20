@@ -4,6 +4,7 @@ import nato from './nato';
 import numbers from './numbers';
 import size from './size';
 import date from './date';
+import color from './color';
 
 export const jtTransform = {
     numberToLetter: numbers.numberToLetter,
@@ -12,5 +13,6 @@ export const jtTransform = {
     nato,
     morse,
     braille,
-    date
+    date,
+    color
 }

@@ -4,7 +4,8 @@
 
 **jtTransform** es tu respuesta.
 
-Aquí te presento una librería simple y ligera que te ayudará a transformar datos de un formato "técnico" a un formato más legible y comprensible por el usuario común. Con **jtTransform**, podrás convertir números a letras,
+Aquí te presento una librería simple y ligera que te ayudará a transformar datos de un formato "técnico" a un formato más legible y comprensible por el usuario común. Con **jtTransform**, podrás convertir números a letras, letras a números, tamaños a un formato legible, alfabeto NATO, alfabeto Morse, alfabeto Braille y mucho más.
+Además, la librería incluye funciones para convertir colores a diferentes formatos, como hexadecimal, RGB, RGBA, HSL, HSLA y CMYK.
 
 [![Documentación](https://javiertinc.github.io/transform/images/gh-documentacion.png)](https://github.com/JaviertINC/transform/wiki)
 
@@ -80,10 +81,11 @@ jtTransform.size.unformat('1GB'); // Retorna: 1073741824
 | Días de la semana | ✅ | `date.weekDay` |
 | Meses del año | ✅ | `date.month` |
 | `Colores` |  |  |
-| Colores a formato hexadecimal | ❌ | `color.toHex` |
-| Colores a formato RGB | ❌ | `color.toRGB` |
-| Colores a formato RGBA | ❌ | `color.toRGBA` |
+| Colores a formato hexadecimal | ✅ | `color.toHex` |
+| Colores a formato RGB | ✅ | `color.toRGB` |
+| Colores a formato RGBA | ✅ | `color.toRGBA` |
+| Colores a formato CMYK | ✅ | `color.toCMYK` |
 | Colores a formato HSL | ❌ | `color.toHSL` |
 | Colores a formato HSLA | ❌ | `color.toHSLA` |
-| Colores a formato CMYK | ❌ | `color.toCMYK` |
-| Colores a todos los formatos soportados | ❌ | `color.toAll` |
+| Colores a nombre | ❌ | `color.toName` |
+| Colores a todos los formatos soportados | ✅ | `color.toAll` |
