@@ -1,4 +1,4 @@
-[![javiertinc@transform](https://javiertinc.github.io/transform/images/gh-header.png)](https://github.com/JaviertINC/transform)
+[![javiertinc@transform](https://javiertinc.github.io/media/jtTransform/gh-header.png)](https://github.com/JaviertINC/transform)
 
 ¿Necesitas transformar datos que solo los técnicos interiorizados entienden a datos más simples y legibles?
 
@@ -7,18 +7,18 @@
 Aquí te presento una librería simple y ligera que te ayudará a transformar datos de un formato "técnico" a un formato más legible y comprensible por el usuario común. Con **jtTransform**, podrás convertir números a letras, letras a números, tamaños a un formato legible, alfabeto NATO, alfabeto Morse, alfabeto Braille y mucho más.
 Además, la librería incluye funciones para convertir colores a diferentes formatos, como hexadecimal, RGB, RGBA, HSL, HSLA y CMYK.
 
-[![Documentación](https://javiertinc.github.io/transform/images/gh-documentacion.png)](https://github.com/JaviertINC/transform/wiki)
+[![Documentación](https://javiertinc.github.io/media/jtTransform/gh-documentacion.png)](https://github.com/JaviertINC/transform/wiki)
 
 Te invito a revisar la [**documentación**](https://github.com/JaviertINC/transform/wiki) para comprobar lo fácil que es usarlo. Aquí encontrarás ejemplos de uso, funciones disponibles y mucho más.
 
-[![Instalación](https://javiertinc.github.io/transform/images/gh-instalacion.png)](https://github.com/JaviertINC/transform/wiki)
+[![Instalación](https://javiertinc.github.io/media/jtTransform/gh-instalacion.png)](https://github.com/JaviertINC/transform/wiki)
 ¡Esto es realmente rápido y sencillo! Solo necesitas un gestor de paquetes como npm, yarn o pnpm. Si ya tienes uno instalado, simplemente ejecuta uno de los siguientes comandos en la raíz de tu proyecto:
 
 ```bash
 npm install @javiertinc/transform
 ```
 
-```bash 
+```bash
 yarn add @javiertinc/transform
 ```
 
@@ -31,7 +31,7 @@ pnpm add @javiertinc/transform
 
 ¡Y listo! ¡Ya tienes jtTransform instalado y listo para usar!
 
-[![Algunos ejemplos](https://javiertinc.github.io/transform/images/gh-algunos-ejemplos.png)](https://github.com/JaviertINC/transform/wiki)
+[![Algunos ejemplos](https://javiertinc.github.io/media/jtTransform/gh-algunos-ejemplos.png)](https://github.com/JaviertINC/transform/wiki)
 
 ```typescript
 import jtTransform from '@javiertinc/transform';
@@ -104,7 +104,7 @@ jtTransform.color.toCMYK('rgba(255, 0, 0, 1)'); // Retorna: "cmyk(0, 100, 100, 0
 
 ```
 
-![Roadmap](https://javiertinc.github.io/transform/images/gh-roadmap.png)
+![Roadmap](https://javiertinc.github.io/media/jtTransform/gh-roadmap.png)
 
 | Función | Estado | Nombre tentativo de la función |
 | ------- | :------: | :----------------- |
