@@ -1,15 +1,22 @@
-const date = {
-    weekDay: (day: number) => {
-        if (day < 0 || day > 7) return 'No válido';
-        const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-        if (day === 7) day = 0;
-        return days[day];
+const date = {    
+    /**
+     * Obtiene el nombre del día de la semana en el idioma especificado
+     * @param date - La fecha de la cual obtener el día de la semana
+     * @param locale - El código de idioma (ej: 'es-ES', 'en-US', 'fr-FR')
+     * @returns El nombre del día de la semana en el idioma especificado
+     **/
+    weekDay(date: Date, locale: string = 'es-ES'): string {
+        return date.toLocaleDateString(locale, { weekday: 'long' });
     },
 
-    month: (month: number) => {
-        if (month < 1 || month > 12) return 'No válido';
-        const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-        return months[month - 1];
+    /**
+     * Obtiene el nombre del mes en el idioma especificado
+     * @param date - La fecha de la cual obtener el mes
+     * @param locale - El código de idioma (ej: 'es-ES', 'en-US', 'fr-FR')
+     * @returns El nombre del mes en el idioma especificado
+     **/
+    month(date: Date, locale: string = 'es-ES'): string {
+        return date.toLocaleDateString(locale, { month: 'long' });
     }
 };
 

@@ -57,6 +57,51 @@ jtTransform.size.format(1073741824); // Retorna: "1 GB"
 jtTransform.size.unformat('1KB'); // Retorna: 1024
 jtTransform.size.unformat('1MB'); // Retorna: 1048576
 jtTransform.size.unformat('1GB'); // Retorna: 1073741824
+
+// Convierte texto a Alfabeto NATO
+jtTransform.nato.format('Hola'); // Retorna: "Hotel Oscar Lima Alfa"
+// Convierte Alfabeto NATO a texto
+jtTransform.nato.unformat('Hotel Oscar Lima Alfa'); // Retorna: "hola"
+
+// Convierte texto a Alfabeto Morse
+jtTransform.morse.format('Hola'); // Retorna: ".... --- .-.. .-"
+// Convierte Alfabeto Morse a texto
+jtTransform.morse.unformat('.... --- .-.. .-'); // Retorna: "hola"
+
+// Convierte texto a Alfabeto Braille
+jtTransform.braille.format('Hola'); // Retorna: "⠓⠕⠇⠁"
+// Convierte Alfabeto Braille a texto
+jtTransform.braille.unformat('⠓⠕⠇⠁'); // Retorna: "hola"
+
+// Convierte fechas a días de la semana
+jtTransform.date.weekDay('2025-05-29'); // Retorna: "jueves"
+jtTransform.date.weekDay('2025-05-29', 'en-US'); // Retorna: "thursday"
+
+// Convierte fechas a meses del año
+jtTransform.date.month('2025-05-29'); // Retorna: "mayo"
+jtTransform.date.month('2025-05-29', 'en-US'); // Retorna: "may"
+
+// Convierte colores a formato hexadecimal
+jtTransform.color.toHex('#ff0000'); // Retorna: "#ff0000"
+jtTransform.color.toHex('rgb(255, 0, 0)'); // Retorna: "#ff0000"
+jtTransform.color.toHex('rgba(255, 0, 0, 1)'); // Retorna: "#ff0000"
+jtTransform.color.toHex('cmyk(0, 100, 100, 0)'); // Retorna: "#ff0000"
+
+// Convierte colores a formato RGB
+jtTransform.color.toRGB('#ff0000'); // Retorna: "rgb(255, 0, 0)"
+jtTransform.color.toRGB('rgba(255, 0, 0, 1)'); // Retorna: "rgb(255, 0, 0)"
+jtTransform.color.toRGB('cmyk(0, 100, 100, 0)'); // Retorna: "rgb(255, 0, 0)"
+
+// Convierte colores a formato RGBA
+jtTransform.color.toRGBA('#ff0000'); // Retorna: "rgba(255, 0, 0, 1)"
+jtTransform.color.toRGBA('rgb(255, 0, 0)'); // Retorna: "rgba(255, 0, 0, 1)"
+jtTransform.color.toRGBA('cmyk(0, 100, 100, 0)'); // Retorna: "rgba(255, 0, 0, 1)"
+
+// Convierte colores a formato CMYK/CMYB
+jtTransform.color.toCMYK('#ff0000'); // Retorna: "cmyk(0, 100, 100, 0)"
+jtTransform.color.toCMYK('rgb(255, 0, 0)'); // Retorna: "cmyk(0, 100, 100, 0)"
+jtTransform.color.toCMYK('rgba(255, 0, 0, 1)'); // Retorna: "cmyk(0, 100, 100, 0)"
+
 ```
 
 ![Roadmap](https://javiertinc.github.io/transform/images/gh-roadmap.png)
