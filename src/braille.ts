@@ -39,6 +39,11 @@ const brailleAlphabet: { [key: string]: string } = {
 };
 
 const braille = {
+    /**
+     * Formatea un texto a Braille.
+     * @param {string} text - El texto a formatear.
+     * @returns {string} El texto en Braille.
+     **/
     format: (text: string): string => {
 
         return text
@@ -48,6 +53,11 @@ const braille = {
             .join(' ');
     },
 
+    /**
+     * Desformatea un texto en Braille a su representación original.
+     * @param {string} text - El texto en Braille a desformatear.
+     * @returns {string} El texto original.
+     **/
     unformat: (text: string): string => {
         const reverseBrailleAlphabet = Object.fromEntries(
             Object.entries(brailleAlphabet).map(([key, value]) => [value, key])

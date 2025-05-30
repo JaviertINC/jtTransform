@@ -29,6 +29,11 @@ const natoAlphabet: { [key: string]: string } = {
 };
 
 const nato = {
+    /**
+     * Formatea un texto a código NATO.
+     * @param {string} text - El texto a formatear.
+     * @returns {string} El texto en código NATO.
+     **/
     format: (text: string): string => {
 
         return text
@@ -38,6 +43,11 @@ const nato = {
             .join(' ');
     },
 
+    /**
+     * Desformatea un texto en código NATO a su representación original.
+     * @param {string} text - El texto en código NATO a desformatear.
+     * @returns {string} El texto original.
+     **/
     unformat: (text: string): string => {
         const reverseNatoAlphabet = Object.fromEntries(
             Object.entries(natoAlphabet).map(([key, value]) => [value, key])

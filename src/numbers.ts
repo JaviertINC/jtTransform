@@ -1,4 +1,9 @@
 const numbers = {
+    /**
+     * Transforma números a su representación en letras en español.
+     * @param {number} num - El número a transformar.
+     * @returns {string} El número en letras en español.
+     **/
     numberToLetter(num: number): string {
         if (num === 0) return "Cero";
 
@@ -66,6 +71,11 @@ const numbers = {
         return result.charAt(0).toUpperCase() + result.slice(1);
     },
 
+    /**
+     * Transforma una cadena de texto que representa un número en letras a su valor numérico.
+     * @param {string} str - La cadena de texto a transformar.
+     * @returns {number} El valor numérico del texto.
+     **/
     letterToNumber(str: string): number {
         if (str === "cero") return 0;
 

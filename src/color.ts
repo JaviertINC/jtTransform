@@ -95,6 +95,11 @@ function rgbaToCMYK(r: number, g: number, b: number, a: number = 1): string {
 }
 
 const color = {
+    /**
+     * Convierte un color en formato string a un objeto RGBA.
+     * @param {string} color - El color a convertir.
+     * @returns {Object} Un objeto con las propiedades r, g, b.
+     **/
     toRGB(color: string): { r: number, g: number, b: number } {
         const rgba = anyToRGBA(color);
         return {
@@ -104,6 +109,11 @@ const color = {
         }
     },
 
+    /**
+     * Convierte un color en formato string a un objeto RGBA.
+     * @param {string} color - El color a convertir.
+     * @returns {Object} Un objeto con las propiedades r, g, b, a.
+     **/
     toRGBA(color: string): { r: number, g: number, b: number, a: number } {
         const rgba = anyToRGBA(color);
         return {
@@ -114,20 +124,40 @@ const color = {
         }
     },
 
+    /**
+     * Convierte un color en formato string a un string en formato hexadecimal.
+     * @param {string} color - El color a convertir.
+     * @returns {string} El color en formato hexadecimal.
+     **/
     toHex(color: string): string {
         const rgba = anyToRGBA(color);
         return rgbaToHex(rgba.r, rgba.g, rgba.b, rgba.opacity);
     },
 
+    /**
+     * Convierte un color en formato string a un string en formato CMYK.
+     * @param {string} color - El color a convertir.
+     * @returns {string} El color en formato CMYK.
+     **/
     toCMYK(color: string): string {
         const rgba = anyToRGBA(color);
         return rgbaToCMYK(rgba.r, rgba.g, rgba.b, rgba.opacity);
     },
 
+    /**
+     * Es lo mismo que toCMYK, pero con un nombre diferente.
+     * @param {string} color - El color a convertir.
+     * @returns {string} El color en formato CMYK.
+     **/
     toCMYB(color: string): string {
         return this.toCMYK(color);
     },
 
+    /**
+     * Convierte un color en formato string a un objeto con todas sus representaciones.
+     * @param {string} color - El color a convertir.
+     * @returns {Object} Un objeto con las propiedades rgb, rgba, hex, cmyk.
+     **/
     toAll(color: string): {
         rgb: string,
         rgba: string,

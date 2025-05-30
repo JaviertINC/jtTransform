@@ -10,6 +10,11 @@ const morseCode: { [key: string]: string } = {
 };
 
 const morse = {
+    /**
+     * Formatea un texto a código Morse.
+     * @param {string} text - El texto a formatear.
+     * @returns {string} El texto en código Morse.
+     **/
     format: (text: string): string => {
 
         return text
@@ -19,6 +24,11 @@ const morse = {
             .join(' ');
     },
 
+    /**
+     * Desformatea un texto en código Morse a su representación original.
+     * @param {string} text - El texto en código Morse a desformatear.
+     * @returns {string} El texto original.
+     **/
     unformat: (text: string): string => {
         const reverseMorseCode = Object.fromEntries(
             Object.entries(morseCode).map(([key, value]) => [value, key])
