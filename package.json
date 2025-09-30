@@ -1,6 +1,6 @@
 {
     "name": "@javiertinc/transform",
-    "version": "1.8.1",
+    "version": "1.9.0",
     "description": "Una librería simple pero muy útil para transformar datos.",
     "author": "@JaviertINC",
     "homepage": "https://github.com/JaviertINC/transform/wiki",
@@ -26,11 +26,18 @@
         "library",
         "utils"
     ],
+    "type": "module",
     "main": "./index.js",
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "require": "./index.js"
+        }
+    },
     "scripts": {
         "clear": "rm -r ./dist",
         "dev": "jtexec ./src/index.ts",
-        "build": "tsc && node ./pkgBuild.js && cp ./readme.md ./dist",
+        "build": "tsc && node ./pkgBuild.cjs",
         "publish": "npm run build && cd dist && npm publish --registry http://localhost:4873",
         "min": "browserify ./dist/index.js -o ./dist/jt.transform.bundle.js && uglifyjs ./dist/jt.transform.bundle.js -o ./dist/jt.transform.min.js"
     },

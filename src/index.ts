@@ -6,7 +6,7 @@ import size from './size';
 import date from './date';
 import color from './color';
 
-export const jtTransform = {
+const jtTransform = {
     numberToLetter: numbers.numberToLetter,
     letterToNumber: numbers.letterToNumber,
     size,
@@ -16,3 +16,5 @@ export const jtTransform = {
     date,
     color
 }
+
+export default jtTransform;
