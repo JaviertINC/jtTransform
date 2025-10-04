@@ -3,8 +3,8 @@
     "version": "1.9.0",
     "description": "Una librería simple pero muy útil para transformar datos.",
     "author": "@JaviertINC",
-    "homepage": "https://github.com/JaviertINC/transform/wiki",
-    "repository": "github:javiertinc/transform",
+    "homepage": "https://github.com/JaviertINC/jtTransform/wiki",
+    "repository": "github:javiertinc/jtTransform",
     "license": "MIT",
     "keywords": [
         "javiertinc",
